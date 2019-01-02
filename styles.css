@@ -1,0 +1,58 @@
+body {
+  background-color: #840000;
+  font-family: 'EB Garamond', serif;
+  margin: 0px;
+}
+
+.wrapper {
+  margin: 7px;
+  background-color: #fff;
+}
+
+nav {
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  font-family: 'EB Garamond', serif;
+  padding: 7px 10px;
+}
+
+
+main {
+  width: 100%;
+}
+
+.header-text {
+  text-align: center;
+  padding-top: 20vh;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 35px;
+  max-width: 740px;
+}
+
+.name {
+  color: #840000;
+  font-size: 40px;
+}
+
+.bio {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.bio:last-of-type {
+  padding-bottom: 25px;
+}
