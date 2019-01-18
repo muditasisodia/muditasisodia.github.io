@@ -2,11 +2,13 @@ body {
   background-color: #840000;
   font-family: 'EB Garamond', serif;
   margin: 0px;
+  color: #303030;
 }
 
 .wrapper {
   margin: 7px;
   background-color: #fff;
+  padding: 10px 20px;
 }
 
 nav {
@@ -20,23 +22,60 @@ ul {
   margin: 0px;
 }
 
-li {
+nav > ul > li {
   list-style-type: none;
   display: inline;
   font-family: 'EB Garamond', serif;
-  padding: 7px 10px;
+  font-size: 20px;
 }
 
+nav > ul > li > a {
+  text-decoration: none;
+  transition: font-size 0.5s ease;
+}
 
+nav > ul > li > a:hover {
+  font-size: 18px;
+}
+
+a {
+  color: #303030;
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .wrapper {
+    padding: 35px 100px 50px 100px;
+  }
+  footer {
+    justify-content: center;
+  }
+
+  footer i {
+    margin: 0px 35px 50px 0px;
+  }
+
+  .index-footer {
+    justify-content: flex-start;
+  }
+}
+/*----------------------------------Index.html--------------------------*/
 main {
   width: 100%;
 }
 
 .header-text {
-  text-align: center;
   padding-top: 20vh;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 15vh;
   margin-left: auto;
   margin-right: auto;
   font-size: 35px;
@@ -50,9 +89,221 @@ main {
 
 .bio {
   font-size: 20px;
-  margin-top: 20px;
+  padding-top: 20px;
+  line-height: 35px;
 }
 
 .bio:last-of-type {
   padding-bottom: 25px;
+}
+
+.divider {
+  text-align: center;
+  font-size: 5px;
+}
+
+.divider i {
+  padding: 20px 35px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10vh;
+}
+
+.work-category {
+  flex: 100%;
+}
+
+.work-header {
+  font-size: 22px;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  font-style: italic;
+}
+
+.work-content {
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.work a, footer a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.work a:hover, footer a:hover {
+  color: #9D3333;
+}
+
+@media only screen and (min-width: 1024px) {
+  .work-category {
+    flex: 45%;
+  }
+
+  .work-category:first-of-type {
+    flex: 55%;
+  }
+}
+
+/*-------------------------------------Front-end----------------------------*/
+.portfolio-content {
+  max-width: 740px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.proj-header {
+  font-family: 'EB Garamond', serif;
+  font-size: 35px;
+}
+
+.proj-subheader {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #a8a8a8;
+  padding-top: 15px;
+}
+
+.proj-content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.proj-content-header {
+  margin-top: 50px;
+  font-family: 'EB Garamond', serif;
+  font-size: 28px;
+  /*font-weight: bolder;*/
+}
+
+.proj-content-subheader {
+  font-family: 'EB Garamond', serif;
+  font-size: 25px;
+}
+
+.image-grid {
+  text-align: center;
+}
+
+.image-item {
+padding: 15px;
+padding-bottom: 5px;
+}
+
+.image-grid img {
+  object-fit: contain;
+  object-position: center;
+  max-width: 90%;
+}
+
+.image-hor {
+  width: 90%;
+}
+
+.scholarship-badge {
+  width: 30%;
+}
+
+.scholarship-mail {
+  width: 60%;
+}
+
+.caption {
+  font-size: 14px;
+  color: #a8a8a8;
+  text-align: center;
+  line-height: 28px;
+}
+
+.proj-content-header + .proj-subheader {
+  margin: 0px;
+  padding: 0px;
+}
+
+.project-header + p {
+  font-size: 18px;
+  line-height: 34px;
+  color: #303030;
+}
+
+@media only screen and (min-width: 1024px) {
+  .image-hor {
+    width: 45%;
+  }
+}
+
+
+/*--------------------------------------------Photography---------------------------------*/
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo-grid .photo-item {
+  flex: 100%;
+  padding: 20px 10px;
+}
+
+.photo-item > img, .photo-item > p {
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+}
+
+.photo-item > p{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#bg-1.lazy, #bg-2.lazy {
+  background-image: none;
+  background-color: #F1F1FA;
+}
+
+#bg-1 {
+  background-image: url("https://ik.imagekit.io/demo/assets/photography/1.png?tr=w-4000,h-6000");
+}
+
+#bg-2 {
+  background-image: url("https://ik.imagekit.io/demo/assets/photography/2.png?tr=w-7812,h-4133");
+}
+
+@media only screen and (min-width: 794px) {
+  .photo-grid .vert {
+    flex: 40%;
+  }
+
+  .photo-item > p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .photo-item > p {
+    padding-top: 75px;
+  }
+  .photo-grid {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .photo-grid {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
