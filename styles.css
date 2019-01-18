@@ -265,18 +265,19 @@ padding-bottom: 5px;
   line-height: 30px;
 }
 
+/*
 #bg-1.lazy, #bg-2.lazy {
   background-image: none;
   background-color: #F1F1FA;
 }
 
 #bg-1 {
-  background-image: url("https://ik.imagekit.io/demo/assets/photography/1.png?tr=w-4000,h-6000");
+  background-image:
 }
 
 #bg-2 {
   background-image: url("https://ik.imagekit.io/demo/assets/photography/2.png?tr=w-7812,h-4133");
-}
+}*/
 
 @media only screen and (min-width: 794px) {
   .photo-grid .vert {
