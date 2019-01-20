@@ -253,9 +253,14 @@ padding-bottom: 5px;
   justify-content: space-around;
 }
 
-.photo-grid .photo-item {
+.photo-grid .photo-item{
   flex: 100%;
   padding: 20px 10px;
+}
+
+.photo-item:first-of-type {
+  padding: 0px;
+  margin: 0px;
 }
 
 .photo-item > img, .photo-item > p {
@@ -267,22 +272,7 @@ padding-bottom: 5px;
 .photo-item > p{
   font-size: 18px;
   line-height: 30px;
-  text-align: justify;
 }
-
-/*
-#bg-1.lazy, #bg-2.lazy {
-  background-image: none;
-  background-color: #F1F1FA;
-}
-
-#bg-1 {
-  background-image:
-}
-
-#bg-2 {
-  background-image: url("https://ik.imagekit.io/demo/assets/photography/2.png?tr=w-7812,h-4133");
-}*/
 
 @media only screen and (min-width: 794px) {
   .photo-grid .vert {
@@ -292,6 +282,10 @@ padding-bottom: 5px;
   .photo-item > p {
     padding-left: 20px;
     padding-right: 20px;
+    text-align: justify;
+  }
+  .photo-item:first-of-type {
+    padding: 20px 10px;
   }
 }
 
