@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #840000;
   font-family: 'EB Garamond', serif;
