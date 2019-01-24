@@ -73,6 +73,7 @@ footer {
 /*----------------------------------Index.html--------------------------*/
 main {
   width: 100%;
+  /*max-width: 900px;*/
 }
 
 .header-text {
@@ -115,6 +116,9 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 10vh;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .work-category {
