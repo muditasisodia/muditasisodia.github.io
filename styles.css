@@ -151,6 +151,11 @@ main {
   transition: color 0.5s;
 }
 
+.work a {
+  /*border-bottom: 1.5px dashed rgba(132, 0, 0, 0.25);*/
+  border-bottom: 2px dotted rgba(132, 0, 0, 0.25);
+}
+
 .work a:hover, footer a:hover {
   color: #9D3333;
 }
@@ -336,7 +341,7 @@ padding-bottom: 5px;
   /*margin-left: auto;
   margin-right: auto;*/
   margin: 50px auto;
-  border-left: 5px solid rgb(132, 0, 0, 0.5);
+  border-left: 5px solid rgba(132, 0, 0, 0.5);
   padding-left: 25px;
   padding-right: 25px;
 }
