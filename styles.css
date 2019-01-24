@@ -115,7 +115,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
