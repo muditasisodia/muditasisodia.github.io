@@ -116,7 +116,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 10vh;
-  max-width: 1500px;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -137,7 +137,14 @@ main {
   line-height: 30px;
   font-style: normal;
   margin-top: 20px;
+  /*margin-right: 0px;*/
 }
+
+/*
+.work-category:first-of-type .work-content {
+  margin-left: 0px;
+}
+*/
 
 .work a, footer a {
   text-decoration: none;
@@ -150,11 +157,20 @@ main {
 
 @media only screen and (min-width: 1024px) {
   .work-category {
-    flex: 45%;
+    flex: 35%;
   }
 
   .work-category:first-of-type {
-    flex: 55%;
+    flex: 65%;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .work-category {
+    flex: 30%;
+  }
+
+  .work-category:first-of-type {
+    flex: 70%;
   }
 }
 
@@ -310,4 +326,17 @@ padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/*------------------------------------------Internship---------------------------------------*/
+
+.testimonial {
+  font-style: italic;
+  width: 80%;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: 50px auto;
+  border-left: 5px solid rgb(132, 0, 0, 0.5);
+  padding-left: 25px;
+  padding-right: 25px;
 }
