@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Open+Sans&display=swap" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
@@ -12,78 +12,39 @@
   <title>Mudita Sisodia</title>
 </head>
 <body>
-  <div class="wrapper">
-  <nav>
-    <ul>
-      <li><a href="#work-here">WORK</a></li>
-      <li><a href="assets/CVMuditaSisodia.pdf" target="_blank">CURRICULUM VITAE</a></li>
+
+  <div class="container">
+    <div class="logo">
+        <!--<a href="#"><img src="logo.png" alt="logo"></a>-->
+        <div id = "muditasisodia">
+          mudita sisodia
+        </div>
+        <div id = "ms-desc">
+          designer, tinkerer and observer
+        </div>
+    </div>
+    <div class="navbar">
+
+    <div class="icon-bar" onclick="Show()">
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+
+    <ul id="nav-lists">
+        <li class="close"><span onclick="Hide()">×</span></li>
+        <li><a href="#">work</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">resume</a></li>
     </ul>
-  </nav>
-  <main>
-    <div class="header-text">
-      Hi! I'm <span class="name">Mudita</span>.
-      <div class="bio">
-        I'm a final year Computer Science student curious about technology, art and everything in between.
-      </div>
-      <div class="bio">
-        I'm currently taking a step back to explore new paths which would allow me to solve problems faced by people, by doing what I do best and having fun while I'm at it.
-      </div>
-      <div class="bio">
-        This is an amalgamation of what I've been up to in the last few years.
-      </div>
+
+    </div>
+    </div>
+    <div class="body">
+
     </div>
 
 
-    <div class="divider">
-      <i class="fas fa-circle"></i>
-      <i class="fas fa-circle"></i>
-      <i class="fas fa-circle"></i>
-    </div>
-
-
-        <a name="work-here"></a>
-    <div class="work">
-      <div class="work-category work-header">
-        FRONTEND
-        <div class="work-content">
-          <a href="https://blog.oswald.foundation/improving-accessibility-using-augmented-reality-augmenta11y-f3937e08995f" target="_blank">Augmenta11y: A Reading App For The Dyslexic</a>
-        </div>
-        <div class="work-content">
-          <a href="fendnanodegree.html">Google's Udacity Frontend Developer Nanodegree Scholarship</a>
-        </div>
-        <div class="work-content">
-          <a href="unfound.html">Summer Internship at UnFound</a>
-        </div>
-      </div>
-      <div class="work-category work-header">
-        DESIGN
-        <div class="work-content">
-          <a href="designthinking.html">Design Thinking Project</a>
-        </div>
-        <div class="work-content">
-          <a href="enactus.html">Product Development and Creatives: Enactus MPSTME</a>
-        </div>
-        <div class="work-content">
-          <a href="cachef.html">Menu Design: CA Chef</a>
-        </div>
-      </div>
-      <div class="work-header">
-        <a href="artinstallations.html">ART INSTALLATIONS</a>
-      </div>
-      <div class="work-header">
-        <a href="photography.html">PHOTOGRAPHY</a>
-      </div>
-      <div class="work-header">
-        <a href="scribbles.html">MISC. SCRIBBLES</a>
-      </div>
-    </div>
-  </main>
-  <footer class="index-footer" style="max-width:1250px; margin-left:auto; margin-right:auto;">
-    <a href="https://twitter.com/apurplestrand" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/muditasisodia/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://github.com/muditasisodia" target="_blank"><i class="fab fa-github"></i></a>
-  </footer>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>

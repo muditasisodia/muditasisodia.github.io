@@ -1,6 +1,6 @@
 
 function run() {
-
+/*
   console.log(window.innerHeight);
   console.log(document.querySelector(".wrapper").offsetHeight);
   if(window.innerHeight> document.querySelector(".wrapper").offsetHeight){
@@ -12,6 +12,16 @@ function run() {
   else {
     console.log("dnt chnage");
   }
+  */
+}
+
+var navList = document.getElementById("nav-lists");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
 }
 
 
