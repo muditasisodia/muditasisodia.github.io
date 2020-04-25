@@ -18,7 +18,7 @@ body {
   -webkit-box-sizing: border-box;
 }
 
-.container {
+.nav-container {
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,35 +33,6 @@ body {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 50px ;
-}
-
-.container .logo {
-  max-width: 250px;
-}
-
-
-.container .logo a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 60px;
-}
-
-.container .logo div{
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 #muditasisodia
@@ -73,7 +44,8 @@ body {
    font-size: 8px;
  }
 
-.container .navbar ul {
+
+.nav-container .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,39 +53,43 @@ body {
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
+
 }
 
-.container .navbar ul li a {
+.nav-container .navbar ul li a {
   text-decoration: none;
   color: #000000;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   display: block;
-  height: 60px;
-  line-height: 60px;
+  height: 30px;
+  line-height: 30px;
   cursor: pointer;
   padding: 0 10px;
+  margin-left: 10px;
+  border-bottom: solid 0px #FFD3E3;
+  transition: border-width 0.15s linear;
 }
 
-.container .navbar ul li a:hover {
-  color: #ffffff;
+.nav-container .navbar ul li a:hover {
+  border-width:3px;
 }
 
-.container .navbar ul .close {
+.nav-container .navbar ul .close {
   display: none;
   text-align: right;
   padding: 10px;
 }
 
-.container .navbar ul .close span {
+.nav-container .navbar ul .close span {
   font-size: 40px;
   display: inline-block;
   padding: 0 10px;
   cursor: pointer;
 }
 
-.container .navbar .icon-bar {
+.nav-container .navbar .icon-bar {
   padding: 18px 8px;
   width: 50px;
   height: 60px;
@@ -128,20 +104,20 @@ body {
   cursor: pointer;
 }
 
-.container .navbar .icon-bar i {
+.nav-container .navbar .icon-bar i {
   background-color: #333333;
   height: 2px;
 }
 
 @media only screen and (max-width: 650px) {
-  .container {
+  .nav-container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0px 16px;
   }
 
-  .container .navbar ul {
+  .nav-container .navbar ul {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     position: fixed;
@@ -159,33 +135,57 @@ body {
     transition: left .3s;
   }
 
-  .container .navbar ul li a {
+  .nav-container .navbar ul li a {
     padding: 10px;
     font-size: 16px;
     height: auto;
     line-height: normal;
   }
 
-  .container .navbar ul .close {
+  .nav-container .navbar ul .close {
     display: block;
   }
 
-  .container .navbar .icon-bar {
+  .nav-container .navbar ul .close span {
+    margin-right: 0px;
+  }
+
+  .nav-container .navbar .icon-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 
-  .container .navbar ._Menus-show {
+  .nav-container .navbar ._Menus-show {
     left: 0;
   }
 }
 
-.body {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 10px;
+@media only screen and (max-width: 1100px) {
+  .nav-container{
+    padding: 0px 50px ;
+  }
 }
 
-
 /*---------------------End of styling for responsive navbar-----------------------------*/
+
+/*-------------------------Project tiles-------------------------------------------*/
+.projects-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: 332px;
+}
+
+.project-img img{
+  max-width: 332px;
+  height: auto;
+  object-fit: cover;
+}

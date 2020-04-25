@@ -1,28 +1,27 @@
 
 function run() {
-/*
-  console.log(window.innerHeight);
-  console.log(document.querySelector(".wrapper").offsetHeight);
-  if(window.innerHeight> document.querySelector(".wrapper").offsetHeight){
-    document.querySelector(".wrapper").style.height = "100vh"
-    console.log("chnage height");
-    console.log(window.innerHeight);
-    console.log(document.querySelector(".wrapper").offsetHeight);
+
+  var navList = document.getElementById("nav-lists");
+  function Show() {
+  navList.classList.add("_Menus-show");
   }
-  else {
-    console.log("dnt chnage");
+
+  function Hide(){
+  navList.classList.remove("_Menus-show");
   }
-  */
+
 }
 
-var navList = document.getElementById("nav-lists");
-function Show() {
-navList.classList.add("_Menus-show");
-}
 
-function Hide(){
-navList.classList.remove("_Menus-show");
-}
+  var navList = document.getElementById("nav-lists");
+  function Show() {
+  navList.classList.add("_Menus-show");
+  }
+
+  function Hide(){
+  navList.classList.remove("_Menus-show");
+  }
+
 
 
 
