@@ -11,6 +11,18 @@ body {
 
 /*-------------------------Styling for responsive navbar--------------------------------*/
 /*
+
+@media only screen and (max-width: 650px) {
+
+}
+
+@media only screen and (max-width: 1032px) {
+  .nav-container{
+    padding: 0px 16px ;
+  }
+}
+*/
+
 *,
 *::before,
 *::after {
@@ -30,31 +42,56 @@ body {
   align-items: center;
   overflow: hidden;
   justify-content: space-between;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px 16px;
 }
 
-#muditasisodia
-{
+.logo #muditasisodia {
   font-family: 'DM Serif Display', serif;
 }
- #ms-desc
- {
-   font-size: 8px;
- }
 
+.logo #ms-desc {
+   font-size: 12px;
+}
 
-.nav-container .navbar ul {
+.nav-container .navbar .icon-bar {
+  padding: 16px 0px;
+  width: 40px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 15px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
 
+.icon-bar i {
+  background-color: #333333;
+  height: 2px;
+}
+
+.nav-container .navbar ul {
+  list-style: none;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  position: fixed;
+  left: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -webkit-transition: left .3s;
+  -o-transition: left .3s;
+  transition: left .3s;
 }
 
 .nav-container .navbar ul li a {
@@ -66,8 +103,6 @@ body {
   height: 30px;
   line-height: 30px;
   cursor: pointer;
-  padding: 0 10px;
-  margin-left: 10px;
   border-bottom: solid 0px #FFD3E3;
   transition: border-width 0.15s linear;
 }
@@ -76,97 +111,19 @@ body {
   border-width:3px;
 }
 
-.nav-container .navbar ul .close {
-  display: none;
-  text-align: right;
-  padding: 10px;
+.nav-container .navbar ._Menus-show {
+  left: 0;
 }
 
-.nav-container .navbar ul .close span {
-  font-size: 40px;
-  display: inline-block;
-  padding: 0 10px;
-  cursor: pointer;
-}
-
-.nav-container .navbar .icon-bar {
-  padding: 18px 8px;
-  width: 50px;
-  height: 60px;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.nav-container .navbar .icon-bar i {
-  background-color: #333333;
-  height: 2px;
-}
-
-@media only screen and (max-width: 650px) {
-  .nav-container {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 0px 16px;
-  }
-
+@media only screen and (min-width: 768px) {
+/*
   .nav-container .navbar ul {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    position: fixed;
-    left: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background: #ffffff;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    -webkit-transition: left .3s;
-    -o-transition: left .3s;
-    transition: left .3s;
-  }
-
-  .nav-container .navbar ul li a {
-    padding: 10px;
-    font-size: 16px;
-    height: auto;
-    line-height: normal;
-  }
-
-  .nav-container .navbar ul .close {
-    display: block;
-  }
-
-  .nav-container .navbar ul .close span {
-    margin-right: 0px;
-  }
-
-  .nav-container .navbar .icon-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-
-  .nav-container .navbar ._Menus-show {
-    left: 0;
-  }
+  */
 }
-
-@media only screen and (max-width: 1032px) {
-  .nav-container{
-    padding: 0px 16px ;
-  }
-}
-*/
 
 /*---------------------End of styling for responsive navbar-----------------------------*/
 

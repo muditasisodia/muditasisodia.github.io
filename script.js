@@ -14,6 +14,12 @@ function run() {
 
 
   var navList = document.getElementById("nav-lists");
+
+  function toggleMenu() {
+    if (navList.classList.contains("_Menus-show")) Hide();
+    else Show();
+  }
+
   function Show() {
   navList.classList.add("_Menus-show");
   }
