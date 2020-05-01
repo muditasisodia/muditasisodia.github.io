@@ -28,6 +28,10 @@ function run() {
   navList.classList.remove("_Menus-show");
   }
 
+  function showCategories(){
+    document.getElementById("work-categories").style.display = "block";
+  }
+
 
 
 
