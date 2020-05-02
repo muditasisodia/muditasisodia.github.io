@@ -12,18 +12,6 @@ body {
 }
 
 /*-------------------------Styling for responsive navbar--------------------------------*/
-/*
-
-@media only screen and (max-width: 650px) {
-
-}
-
-@media only screen and (max-width: 1032px) {
-  .nav-container{
-    padding: 0px 16px ;
-  }
-}
-*/
 
 *,
 *::before,
@@ -34,19 +22,13 @@ body {
 
 .nav-container {
   height: 60px;
-  /*
   display: -webkit-box;
   display: -ms-flexbox;
-  */
   display: flex;
-  /*
   -ms-flex-wrap: wrap;
-  */
   flex-wrap: wrap;
-  /*
   -webkit-box-align: center;
   -ms-flex-align: center;
-  */
   align-items: center;
   overflow: hidden;
   justify-content: space-between;
@@ -65,21 +47,15 @@ body {
   padding: 16px 0px;
   width: 40px;
   height: 60px;
-  /*
   display: -webkit-box;
   display: -ms-flexbox;
-  */
   display: flex;
-  /*
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  */
   flex-direction: column;
-  /*
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  */
   justify-content: space-between;
   cursor: pointer;
 }
@@ -91,26 +67,20 @@ body {
 
 .nav-container .navbar ul {
   list-style: none;
-  /*
   -ms-flex-wrap: nowrap;
-  */
   flex-wrap: nowrap;
   position: fixed;
   left: 100%;
-  /*
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  */
   flex-direction: column;
   background: #ffffff;
   width: 100%;
   height: 100%;
   overflow: auto;
-  /*
   -webkit-transition: left .3s;
   -o-transition: left .3s;
-  */
   transition: left .3s;
   margin: 0px;
   padding: 0px;
@@ -241,4 +211,188 @@ color: #777777;
     margin-left: 20vw;
     padding: 0px 10vw;
   }
+}
+
+/*---------------------------Styling for internal pages-------------------------*/
+
+.wrapper {
+  margin: 7px;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .wrapper {
+    padding: 35px 100px 50px 100px;
+  }
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*-------------------------------------Front-end----------------------------*/
+.portfolio-content {
+  max-width: 740px;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.proj-header {
+  font-family: 'DM Serif Display', serif;
+  font-size: 35px;
+}
+
+.proj-subheader {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #a8a8a8;
+  padding-top: 15px;
+}
+
+.proj-content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.proj-content-header {
+  margin-top: 50px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  /*font-weight: bolder;*/
+}
+
+.proj-content-subheader {
+  font-family: 'DM Serif Display', serif;
+  font-size: 25px;
+}
+
+.image-grid {
+  text-align: center;
+}
+
+.image-item {
+padding: 15px;
+padding-bottom: 5px;
+}
+
+.image-grid img {
+  object-fit: contain;
+  object-position: center;
+  max-width: 90%;
+}
+
+.image-hor {
+  width: 90%;
+}
+
+.scholarship-badge {
+  width: 30%;
+}
+
+.scholarship-mail {
+  width: 60%;
+}
+
+.caption {
+  font-size: 14px;
+  color: #a8a8a8;
+  text-align: center;
+  line-height: 28px;
+}
+
+.proj-content-header + .proj-subheader {
+  margin: 0px;
+  padding: 0px;
+}
+
+.project-header + p {
+  font-size: 18px;
+  line-height: 34px;
+  color: #303030;
+}
+
+@media only screen and (min-width: 1024px) {
+  .image-hor {
+    width: 45%;
+  }
+}
+
+
+/*--------------------------------------------Photography---------------------------------*/
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo-grid .photo-item{
+  flex: 100%;
+  padding: 20px 10px;
+}
+
+.photo-item:first-of-type {
+  padding: 0px;
+  margin: 0px;
+}
+
+.photo-item > img, .photo-item > p {
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+}
+
+.photo-item > p{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media only screen and (min-width: 794px) {
+  .photo-grid .vert {
+    flex: 40%;
+  }
+
+  .photo-item > p {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+  }
+  .photo-item:first-of-type {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .photo-item > p {
+    padding-top: 75px;
+  }
+  .photo-grid {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .photo-grid {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*------------------------------------------Internship---------------------------------------*/
+
+.testimonial {
+  font-style: italic;
+  width: 80%;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: 50px auto;
+  border-left: 5px solid rgba(132, 0, 0, 0.25);
+  padding-left: 25px;
+  padding-right: 25px;
 }
