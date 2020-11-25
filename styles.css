@@ -2,422 +2,296 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', serif;
 }
 
 body {
-  font-family: 'Open Sans', serif;
   color: #303030;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', serif;
 }
 
 /*-------------------------Styling for responsive navbar--------------------------------*/
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+li {
+  margin-bottom: 16px;
 }
 
-.nav-container {
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-  justify-content: space-between;
-  margin: 0px 16px;
+a {
+  text-decoration: none;
+  color: #303030;
 }
-
-.logo #muditasisodia {
-  font-weight: 700;
-}
-
-.logo #ms-desc {
-   font-size: 12px;
-}
-
-.nav-container .navbar .icon-bar {
-  padding: 16px 0px;
-  width: 40px;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.icon-bar i {
-  background-color: #333333;
-  height: 2px;
-}
-
-.nav-container .navbar ul {
-  list-style: none;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+/*
+.gradient-1 {
+  height: 100vw;
+  width: 200vw;
   position: fixed;
-  left: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background: #ffffff;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  -webkit-transition: left .3s;
-  -o-transition: left .3s;
-  transition: left .3s;
+  right: -100vw;
+  top: -75vw;
+  background: radial-gradient(closest-side, #FFA6CD 0, white 70%);
+  z-index: -1;
+  color: rgba(255, 255, 255, 0);
+}
+
+.gradient-2 {
+  height: 75vw;
+  width: 75vw;
+  position: fixed;
+  right: 5vw;
+  top: -70vw;
+  background: radial-gradient(circle at center, #FCDA6D 0, rgba(254, 254, 254, 0) 70%);
+  z-index: -1;
+  color: rgba(255, 255, 255, 0);
+}
+*/
+
+.fixed-width {
+  padding: 0px 16px;
+}
+
+.content-container {
+  margin-top: 80px;
+}
+
+/*----------------------------------------- NAVBAR --------------------------------------*/
+.nav-contents {
+  display: flex;
+  margin: 32px auto;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.logo {
+  font-weight: 400;
+}
+
+span {
+  font-weight: 200;
+}
+
+.fa-times {
+  display: none;
+}
+
+.menu-list {
+  display: none;
+  font-family: 'Open Sans', serif;
+  position: absolute;
+  top: 96px;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu-list ul {
+  padding: 0px;
+  margin-top: 32px;
+}
+
+.menu-list li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu-show {
+  display: block;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.desktop-menu ul{
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
   margin: 0px;
   padding: 0px;
-}
-
-.nav-container .navbar ul li a {
-  text-decoration: none;
-  text-align: center;
-  color: #000000;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', serif;
   font-size: 16px;
-  display: block;
-  height: 30px;
-  line-height: 30px;
-  cursor: pointer;
-  border-bottom: solid 0px #444444;
-  transition: border-width 0.15s linear;
-  margin-top: 1.5em;
+  line-height: 24px;
 }
 
-.nav-container .navbar ul li a:hover {
-  border-width:3px;
+.desktop-menu .active {
+  border-bottom: solid 2px rgba(0, 0, 0, 0.25);
 }
 
-.nav-container .navbar ._Menus-show {
-  left: 0;
-}
+@media only screen and (min-width: 992px) {
+  .desktop-menu {
+    display: block;
+  } 
 
-#work-categories li {
-  margin-top: 10px;
-  margin-left: 15px;
-}
-
-@media only screen and (min-width: 768px) {
-
-  .nav-container .navbar .icon-bar {
+  .fa-bars {
     display: none;
   }
+}
+/*-----------------------------------------END OF NAVBAR --------------------------------------*/
 
-  .nav-container {
-    height: 100vh;
-    width: 20vw;
-    background-color: rgba(0,0,0,0.025);
-    position: fixed;
-    top :0px;
-    left :0px;
-    margin: 0px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 32px;
-    padding-top: 15vh;
-  }
+/*-----------------------------------------INDEX SECTIONS --------------------------------------*/
 
-  .nav-container .navbar ul{
-    position: static;
-    width: auto;
-    height: auto;
-    background-color: rgba(255,255,255,0);
-  }
 
-  .nav-container .navbar ul li a {
-    text-align: left;
-    display: inline-block;
-  }
-
-  .logo #muditasisodia {
-    font-size: 20px;
-  }
-
-  .logo #ms-desc {
-     font-size: 12px;
-  }
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+  /*width: 100%;*/
+  align-items: center;
 }
 
-/*---------------------End of styling for responsive navbar-----------------------------*/
-
-/*-------------------------Projects grid-------------------------------------------*/
-
-
-.projects-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10vh;
-  grid-row-gap: 5em;
-  padding: 0 16px
+.section-header {
+  margin-top: 24px;
+  font-size: 32px;
+  margin-bottom: 24px;
+  font-family: 'Inconsolata',
+  monospace;
 }
 
-.project-title {
-  font-size: 20px;
-  font-weight: 900;
-}
-
-.project-summary {
-  font-size: 16px;
-  line-height: 1.75em;
-}
-
-.project-img img{
-  max-width: 100%;
-  object-fit: cover;
-  margin: 1em 0px;
-  border-radius: 8px;
-}
-
-.project-cta {
-  margin-top: 2em;
+.section-tags, .cs-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 12px;
   text-transform: uppercase;
+  font-weight: bolder;
+}
+.section-img img {
+  width: calc(100vw - 32px);
 }
 
-.project-cta a {
-text-decoration: none;
-color: #777777;
-}
 
-@media only screen and (min-width: 768px) {
-  .projects-container {
-    grid-template-columns: 1fr 1fr;
-    max-width: 80vw;
-    grid-column-gap: 5vw;
+@media only screen and (min-width: 992px) {
+
+  .section-header {
+    margin-top: 0px;
+  }
+
+  .fixed-width {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
     padding: 0px;
-    margin-left: 20vw;
-    padding: 0px 10vw;
+  }
+  
+  .section {
+    flex-direction: row-reverse;
+  }
+
+  .section-details {
+    flex-basis: 55%;
+    padding-right: 5%;
+  }
+
+  .section-img {
+    flex-basis: 40%;
+  }
+
+  .section-img img {
+    object-fit: cover;
+    width: 100%;
   }
 }
 
-/*---------------------------Styling for internal pages-------------------------*/
+/*-------------------------------------END OF INDEX SECTION---------------------------------*/
 
-.wrapper {
-  margin: 7px;
-  background-color: #fff;
-  padding: 10px 20px;
+/*-------------------------------------CASE STUDY---------------------------------*/
+
+.cs-section {
+  margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 768px) {
-
-  .wrapper {
-    padding: 35px 100px 50px 100px;
-  }
+.cs-header-section {
+  margin-bottom: 40px;
 }
 
-/*------------------------------------------------------------------------------*/
+.cs-sub-section {
+  margin-bottom: 40px;
+}
 
-/*-------------------------------------Front-end----------------------------*/
-.portfolio-content {
-  max-width: 740px;
-  font-family: 'Open Sans', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
+.cs-header {
+  font-family: 'Inconsolata', monospace;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.cs-sub-header {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.cs-body {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.cs-body img {
+  max-width: calc(100vw - 32px);
+}
+
+.cs-desc {
   margin-top: 40px;
 }
 
-.proj-header {
-  font-size: 35px;
+ol {
+  padding-left: 1em;
 }
 
-.proj-subheader {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
-  color: #a8a8a8;
-  padding-top: 15px;
+.col {
+  padding-bottom: 40px;
 }
 
-.proj-content {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  line-height: 34px;
+.cs-card {
+  padding: 16px;
+  background-color: rgba(0,0,0,0.025);
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+  align-items: stretch;
+  margin-bottom: 32px;
 }
 
-.proj-content-header {
-  margin-top: 50px;
-  font-size: 28px;
+.videos-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.proj-content-subheader {
-  font-size: 25px;
-}
-
-.image-grid {
+.video-caption {
+  font-size: 11px;
+  line-height: 17px;
+  color: rgba(0,0,0,0.5);
   text-align: center;
+  width: 100%;
 }
 
-.image-item {
-padding: 15px;
-padding-bottom: 5px;
-}
-
-.image-grid img {
-  object-fit: contain;
-  object-position: center;
+video {
+  border-radius: 8px;
+  border: inset 1px rgba(255, 255, 255, 0.1);
   max-width: 90%;
 }
 
-.image-hor {
-  width: 90%;
-}
-
-.scholarship-badge {
-  width: 30%;
-}
-
-.scholarship-mail {
-  width: 60%;
-}
-
-.caption {
-  font-size: 14px;
-  color: #a8a8a8;
-  text-align: center;
-  line-height: 28px;
-}
-
-.proj-content-header + .proj-subheader {
-  margin: 0px;
-  padding: 0px;
-}
-
-.project-header + p {
-  font-size: 18px;
-  line-height: 34px;
-  color: #303030;
-}
-
-@media only screen and (min-width: 1024px) {
-  .image-hor {
-    width: 45%;
-  }
-}
-
-
-/*--------------------------------------------Photography---------------------------------*/
-
-.photo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.photo-grid .photo-item{
-  flex: 100%;
-  padding: 20px 10px;
-}
-
-.photo-item:first-of-type {
-  padding: 0px;
-  margin: 0px;
-}
-
-.photo-item > img, .photo-item > p {
-  object-fit: contain;
-  object-position: center;
-  max-width: 100%;
-}
-
-.photo-item > p{
-  font-size: 18px;
-  line-height: 30px;
-}
-
-@media only screen and (min-width: 794px) {
-  .photo-grid .vert {
-    flex: 40%;
+@media only screen and (min-width: 992px) {
+  .split-col{
+    display: flex;
+    gap: 64px;
   }
 
-  .photo-item > p {
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: justify;
+  .split-col .col {
+    width: 424px;
   }
-  .photo-item:first-of-type {
-    padding: 20px 10px;
-  }
-}
 
-@media only screen and (min-width: 1024px) {
-  .photo-item > p {
-    padding-top: 75px;
+  .split-col img {
+    width: 424px;
   }
-  .photo-grid {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
-@media only screen and (min-width: 1440px) {
-  .photo-grid {
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
+  .cs-body img {
+    width: 960px;
   }
-}
-
-/*------------------------------------------Internship---------------------------------------*/
-
-.testimonial {
-  font-style: italic;
-  width: 80%;
-  /*margin-left: auto;
-  margin-right: auto;*/
-  margin: 50px auto;
-  border-left: 5px solid rgba(132, 0, 0, 0.25);
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-/*--------------------------------------------Eyes Animation ----------------------------------*/
-
-.eyes-animation{
-  margin-bottom: 1em;
-}
-
-@keyframes look-around {
-  0% {
-    transform: translateX(0%);
-  }
-  23.33% {
-    transform: translateX(5%);
-  }
-  43.33% {
-    transform: translateX(5%);
-  }
-  66.66% {
-    transform: translateX(-5%);
-  }
-  86.66% {
-    transform: translateX(-5%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
- .move-eye{
-  transform: translateX(0%);
-  animation: look-around 1.75s linear;
 }
