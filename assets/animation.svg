@@ -1,0 +1,51 @@
+<svg width="600" height="277" viewBox="0 0 600 277" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<g id="animation">
+
+<g clip-path="url(#clip0)">
+
+<g id="glasses">
+  <circle id="glass-left" cx="138.116" cy="138.213" r="134.116" stroke="black" stroke-width="8"/>
+  <circle id="glass-right" cx="461.884" cy="138.213" r="134.116" stroke="black" stroke-width="8"/>
+  <g id="joint">
+    <mask id="path-4-inside-1" fill="white">
+      <path d="M336.862 96.7684C313.211 90.3137 288.27 90.2522 264.588 96.59L266.689 104.442C288.982 98.4761 312.459 98.5341 334.722 104.61L336.862 96.7684Z"/>
+    </mask>
+    <path d="M336.862 96.7684C313.211 90.3137 288.27 90.2522 264.588 96.59L266.689 104.442C288.982 98.4761 312.459 98.5341 334.722 104.61L336.862 96.7684Z" stroke="black" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" mask="url(#path-4-inside-1)"/>
+  </g>
+</g>
+
+<path id="eye-left" d="M137.5 162C93.3221 162 65.921 137.567 46.7393 119C65.921 100.433 93.3221 76 137.5 76C181.678 76 209.079 100.433 228.261 119C209.079 137.567 181.678 162 137.5 162Z" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="eye-right" d="M460 162C416.061 162 388.809 137.569 369.724 119C388.809 100.431 416.061 76 460 76C503.939 76 531.191 100.431 550.276 119C531.191 137.569 503.939 162 460 162Z" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="eyeball-left">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="41" y="72" width="193" height="94">
+<path id="eyeball-left-mask" d="M137.5 162C93.3221 162 65.921 137.567 46.7393 119C65.921 100.433 93.3221 76 137.5 76C181.678 76 209.079 100.433 228.261 119C209.079 137.567 181.678 162 137.5 162Z" fill="white" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0)">
+<circle id="eyeball-left-shape" cx="137.398" cy="119.398" r="38.3983" stroke="black" stroke-width="8"/>
+</g>
+</g>
+<g id="eyeball-right">
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="364" y="72" width="192" height="94">
+<path id="eyeball-right-mask" d="M460 162C416.061 162 388.809 137.569 369.724 119C388.809 100.431 416.061 76 460 76C503.939 76 531.191 100.431 550.276 119C531.191 137.569 503.939 162 460 162Z" fill="white" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask1)">
+<circle id="eyeball-right-shape" cx="460.398" cy="119.398" r="38.3983" stroke="black" stroke-width="8"/>
+</g>
+</g>
+<g id="eyelashes-right">
+<line id="lash-right-2" x1="515.203" y1="88.6026" x2="535.751" y2="68.0546" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<line id="lash-right-1" x1="534.475" y1="104.02" x2="555.023" y2="83.4722" stroke="black" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="eyelashes-left">
+<line id="lash-left-2" x1="4" y1="-4" x2="33.0592" y2="-4" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 81.4511 94.2594)" stroke="black" stroke-width="8" stroke-linecap="round"/>
+<line id="lash-left-1" x1="4" y1="-4" x2="33.0592" y2="-4" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 62.1791 109.677)" stroke="black" stroke-width="8" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="600" height="277" fill="white"/>
+</clipPath>
+</defs>
+</svg>
