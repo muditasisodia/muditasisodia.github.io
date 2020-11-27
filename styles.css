@@ -116,7 +116,17 @@ span {
 }
 
 .desktop-menu .active {
-  border-bottom: solid 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.desktop-menu .inactive {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.1s linear;
+  margin: 0.5em;
+}
+
+.desktop-menu .inactive:hover {
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media only screen and (min-width: 992px) {
@@ -150,6 +160,11 @@ span {
     margin-bottom: 16px;
 }
 
+.intro-body {
+  font-size: 20px;
+  line-height: 32px;
+}
+
 .section {
   display: flex;
   flex-direction: row;
@@ -162,7 +177,7 @@ span {
 .section-header {
   margin-top: 24px;
   font-size: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 4px;
   font-family: 'Inconsolata',
   monospace;
 }
@@ -171,14 +186,24 @@ span {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   color: rgba(0, 0, 0, 0.25);
   font-size: 12px;
   text-transform: uppercase;
   font-weight: bolder;
 }
+
+.section-tags {
+  margin-bottom: 16px;
+}
+
 .section-img img {
   width: calc(100vw - 32px);
+}
+
+.section-desc {
+  font-size: 20px;
+  line-height: 32px;
 }
 
 
@@ -187,7 +212,7 @@ span {
   .intro {
     display: flex;
     gap: 64px;
-    margin-bottom: 120px;
+    margin-bottom: 160px;
   }
 
   .intro img {
@@ -196,7 +221,7 @@ span {
   }
 
   .intro-text {
-    width: 746px;
+    width: 646px;
   }
 
   .section-header {
