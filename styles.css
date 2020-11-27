@@ -132,6 +132,23 @@ span {
 
 /*-----------------------------------------INDEX SECTIONS --------------------------------------*/
 
+.intro img {
+  width: 40vw;
+  height: auto;
+  display: block;
+  /*
+  margin-left: auto;
+  margin-right: auto;
+  */
+  margin-bottom: 48px;
+}
+
+.intro-header {
+    font-family: 'Inconsolata',
+    monospace;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
 
 .section {
   display: flex;
@@ -167,6 +184,21 @@ span {
 
 @media only screen and (min-width: 992px) {
 
+  .intro {
+    display: flex;
+    gap: 64px;
+    margin-bottom: 120px;
+  }
+
+  .intro img {
+    width: 150px;
+    margin-bottom: 0px;
+  }
+
+  .intro-text {
+    width: 746px;
+  }
+
   .section-header {
     margin-top: 0px;
   }
@@ -177,14 +209,16 @@ span {
     width: 960px;
     padding: 0px;
   }
-  
+
+  /*
   .section {
     flex-direction: row-reverse;
   }
+  */
 
   .section-details {
     flex-basis: 55%;
-    padding-right: 5%;
+    padding-left: 5%;
   }
 
   .section-img {
@@ -277,6 +311,25 @@ video {
   max-width: 90%;
 }
 
+#medium-button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 12px 20px 12px 12px;
+  border: none;
+  background-color: #270680;
+  color: #f3f3f4;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+#medium-button img {
+  height: 24px;
+  width: auto;
+}
+
 @media only screen and (min-width: 992px) {
   .split-col{
     display: flex;
@@ -294,4 +347,27 @@ video {
   .cs-body img {
     width: 960px;
   }
+}
+
+/*------------------------------------- END CASE STUDY---------------------------------*/
+
+/*----------------------------------------FOOTER----------------------------------------*/
+
+footer {
+  padding-top: 40px;
+}
+
+footer .footer-inner-container {
+  padding-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials i{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 24px;
+  font-size: 32px;
 }
