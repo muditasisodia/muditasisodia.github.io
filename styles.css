@@ -210,6 +210,14 @@ span {
   line-height: 32px;
 }
 
+.protected {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: rgba(0,0,0,0.5);
+  margin-top: 32px;
+}
 
 @media only screen and (min-width: 992px) {
 
